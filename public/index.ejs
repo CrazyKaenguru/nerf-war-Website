@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Hill Page</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--<div id="stopwatch" class="stopwatch">
+            00:00:00
+        </div>
+        <div style="float: left;">
+        <ul id="buttons" >
+            <li><button class="buttonsleft,button" onclick="startTimer1();stopTimer2()"  >Start</button></li>
+            <li><button class="buttonsleft,button" onclick="stopTimer1()" >Stop</button></li>
+
+            <li><button class="buttonsleft,button" onclick="resetTimer1()">Reset</button></li>
+        </ul>
+        </div>-->
+       <!-- RightTimer
+        <div id="stopwatch2" class="stopwatch2">
+            00:00:00
+        </div>
+        <div style="float: left;">
+        <ul id="buttons" >
+            <li><button class="buttonsleft,button" onclick="startTimer2();stopTimer1()">Start</button></li>
+            <li><button class="buttonsleft,button" onclick="stopTimer2()" >Stop</button></li>
+
+            <li><button class="buttonsleft,button" onclick="resetTimer2()">Reset</button></li>
+        </ul>
+    -->
+        <!--New Buttons-->
+       <form method="post" action="/captureteamred">
+           <input name="redtime" id="redtimeinput" type="hidden">
+           <input name="bluetime2" id="bluetime2input" type="hidden">
+        <button id="captureteamredbutton" type="submit" class="buttonglow glow-button" target="_blank" style="background-color: red;" onclick="startTimer1();stopTimer2();disableredButton()" >
+            <p  name="timered" id="stopwatch" style="font-size:50px" >
+                00:00:00
+            </p>
+        </form>
+        
+    </div>
+    <form method="post" action="/captureteamblue">
+        <input name="bluetime" id="bluetimeinput" type="hidden">
+        <input name="redtime2" id="redtime2input" type="hidden">
+    <button id="captureteambluebutton" type="submit"  class="buttonglow glow-button" target="_blank" style="background-color: blue;" onclick="startTimer2();stopTimer1();;disableblueButton()" >
+        <p id="stopwatch2" style="font-size:50px" >
+            00:00:00
+        </p>
+    </form>
+    <!--Reset game-->
+    <form method="post" action="/resetGame">
+        <button type="submit">Reset Game</button>
+        </form>
+
+        
+        
+       
+        <script src="main.js"></script>
+    </body>
+</html>

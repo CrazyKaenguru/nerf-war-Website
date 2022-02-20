@@ -1,0 +1,45 @@
+body {
+    background: #202020;
+    color: white;
+}
+.button {
+    background: #202020;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.stopwatch {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    transform: translate(-100%, -55%);
+}
+.buttonsleft {
+    
+}
+.stopwatch2 {
+    position: absolute;
+    top: 45%;
+    right: 10%;
+    transform: translate(-100%, -55%);
+}
+#buttons li {
+    display: inline;
+    padding-left: 10px;
+}
+.buttonglow {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);  
+    padding: 40% 40% ;
+    border-radius: 4px;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+   width: 100%px;
+  }
+  
+  .glow-button:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+  }
