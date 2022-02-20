@@ -17,6 +17,7 @@ http.createServer(function (req, res) {
   res.end(); //end the response
 })
 
+
 app.get('/', function (req, res) {
     // assuming index.html is in the same directory as this script
 
